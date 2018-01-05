@@ -1,4 +1,4 @@
-const style = {
+const input = {
     width: 40
 };
 
