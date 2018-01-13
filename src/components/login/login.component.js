@@ -10,31 +10,22 @@ export default class LoginComponent extends Component {
     }
 
     doLogin = () => {
-        var response = this.accountService.doLogin({
-            username: this.state.email,
-            password: this.state.password
-        })
         let inst = this;
 
-        setTimeout(() => {
+        this.accountService.doLogin({
+            // username: this.state.email,
+            // password: this.state.password
+            username: 'mock',
+            password: 'mockpass'
+        }).then((response) => {
             inst.setState((previous) => {
                 return {
                     email: ""
                     , password: ""
                 }
-            }), 1000
-        });
-
-        response.then((response) => {
-            if (response.status === 200) {
-                console.log("OK");
-            } else {
-                console.log("NOT OK")
-            }
-        })
-            .catch((error) => {
-
             });
+        })
+
     }
 
     render() {

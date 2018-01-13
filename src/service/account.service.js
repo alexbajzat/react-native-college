@@ -6,7 +6,7 @@ export default class AccountService {
     doLogin(account) {
 
         return fetch(API_URL + '/login', {
-            method: 'POST',
+            method: 'POST', 
             headers: {
                 'Content-Type': 'application/json'
             },
