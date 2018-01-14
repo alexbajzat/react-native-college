@@ -1,9 +1,18 @@
-import API_URL from '../config/api.config'
+import API_URL from '../config/api.config';
+import { AsyncStorage } from 'react-native';
 
 export default class PostService {
+    constructor() {
+        this.token = null;
+        var instance = this;
+        AsyncStorage.getItem('@NatureEscapeStore')
+            .then((e) => {
+                console.log('from store', e);
+                instance.token = e;
+            });
+        console.log('token', this.token);
+    }
     fetchPosts(page, pageSize) {
-        console.log("before http");
-
         return fetch(`${API_URL}/posts?_page=${page}&_limit=${pageSize}`, {
             method: 'GET',
             headers: {

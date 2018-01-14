@@ -11,15 +11,12 @@ export default class UserComponent extends Component {
         this.state = {
             profile: {}
         };
-        console.log('in user comp');
         this.fetchUserProfile();
     }
 
     fetchUserProfile() {
-        console.log("fetching user");
         this.__userService.fetchUserInfo()
             .then((response) => {
-                console.log(" fetched user", response);
                 this.setState({
                     profile: response,
                     imageURL: `${API_URL}/resources/${response.image}`
@@ -48,7 +45,7 @@ export default class UserComponent extends Component {
                         </Text>
                     </View>
                     <View style={styles.centered_container}>
-                        <Icon type='font-awesome' name= 'trophy'/>
+                        <Icon type='font-awesome' name= 'trophy' color='#FF8F00'/>
                         <Text>
                             {this.state.profile.level}
                         </Text>

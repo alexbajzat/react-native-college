@@ -10,7 +10,6 @@ export default class PostsListComponent extends Component {
 
     constructor() {
         super();
-        console.log("in constructor");
 
         this.__postService = new PostService();
         this.__page = 1;

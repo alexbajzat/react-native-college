@@ -20,7 +20,6 @@ export default class PostComponent extends Component {
 
 
     addToFavs = () => {
-        console.log(" add to fav " + this.props.content.id);
         post = this.props.content;
         console.log(post);
         if (post.added_to_favourite == false) {
@@ -64,7 +63,9 @@ export default class PostComponent extends Component {
                     <Text style={style.title}>{this.props.content.title}</Text>
                     <Text>{this.props.content.author} </Text>
                 </View>
-                <Image style={style.image} source={{ uri: this.imageURL }} />
+                <View style={style.image_container}>
+                    <Image style={style.image} source={{ uri: this.imageURL }} />
+                </View>
                 <View style={style.description_container}>
                     <Text style={style.description}>{this.props.content.description} </Text>
                 </View >
@@ -94,9 +95,11 @@ const style = StyleSheet.create({
     title: {
         fontSize: 20
     },
+    image_container: {
+        flexDirection: 'row'
+    },
     image: {
         flex: 1,
-        width: 600,
         height: 200
     },
     description_container: {
