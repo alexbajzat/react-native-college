@@ -1,0 +1,75 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Muntii Bucegi",
+      "author": "Iosif",
+      "added_to_favourite": true,
+      "description": "Platoul Bucegi a fost dintotdeauna preferatul amatorilor de drumetii mai mult sau mai putin experimentati. Daca primii dintre ei se avanta cu curaj pe traseele Muntilor Bucegi chiar si pe timpul iernii, ceilalti prefera sa le cutreiere vara, cand ziua este suficient de lunga incat sa nu fii nevoit sa maresti pasul pentru ca te prinde intunericul si te poti bucura din plin de peisajele minunate pe care le traversezi.",
+      "image": "muntii-bucegi.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Baisoara",
+      "author": "Mircea",
+      "added_to_favourite": true,
+      "description": "Aflată la doar 50 de km de Cluj-Napoca, Stațiunea Muntele Băișorii este cea mai cunoscuta staţiune de schi a clujenilor şi un loc de o frumuseţe aparte.",
+      "image": "baisoara.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Muntii retezat",
+      "author": "Marcel",
+      "added_to_favourite": false,
+      "description": "Munții Retezat fac parte din Carpații Meridionali, grupa muntoasă Retezat-Godeanu. Se înalță între două depresiuni importante, Petroșani și Hațeg și între două râuri importante, Râul Mare, care îi delimitează la nord și est și Jiul de Vest, care îi delimitează la sud. Sunt înconjurați de Munții Țarcu la vest, Munții Godeanu, la sud-vest și Munții Vâlcan, la sud.",
+      "image": "retezat.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Parang",
+      "author": "Andrei",
+      "added_to_favourite": false,
+      "description": "Munții Parâng fac parte din Carpații Meridionali, grupa muntoasă Parâng-Șureanu-Lotrului, fiind cea mai mare ca suprafață dintre masivele muntoase ale României. De la est la vest măsoară aproximativ 50 de km iar de la nord la sud circa 25 km.",
+      "image": "parang.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Cascada Urlatoarea",
+      "author": "UNESCO",
+      "added_to_favourite": false,
+      "description": "Cascada Urlătoarea este o cascadă formată de pârâul Urlătoarea, în apropierea orașului Bușteni, România, aflată la altitudinea de 1100m, în apropierea traseului turistic care duce din Bușteni spre Platoul Bucegi pe Valea Jepilor. Se poate ajunge și din localitatea Poiana Țapului.",
+      "image": "urlatoarea.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Varful Babele",
+      "author": "Andrei Ionut",
+      "added_to_favourite": false,
+      "description": "Babele sunt formațiuni stâncoase situate în apropiere de vârful Baba Mare (2292 m), situat în masivul Bucegi din Carpații Meridionali. Important obiectiv turistic, Cabana Babele este situată sub vârful cu același nume și este punctul de plecare central în drumețiile din munții Bucegi.",
+      "image": "babele.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Arieseni",
+      "author": "Calin",
+      "added_to_favourite": false,
+      "description": "Arieșeni (în maghiară Lepus) este satul de reședință al comunei cu același nume din județul Alba, Transilvania, România.",
+      "image": "arisieni.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Marea Neagra",
+      "author": "Mircea",
+      "added_to_favourite": false,
+      "description": "Marea Neagră este întinderea de ape din bazinul geomorfologic denumit pontic, unul din bazinele complexului tectonic tethysian, el însuși parte a orogenezei alpino-himalayene, din care fac parte și munții care o mărginesc la nord (în Crimeea), la nord-est (Caucazul) și la sud (lanțurile pontice). Este situată între Europa și Asia, având ca state riverane Rusia, Ucraina, România, Bulgaria, Turcia și Georgia",
+      "image": "marea-neagra.jpg"
+    }
+  ],
+  "profile": {
+    "name": "Mock Name",
+    "email": "mock@mockmail.com",
+    "gender": "male",
+    "level": "rookie",
+    "image": "profile-logo.jpg"
+  }
+}
