@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { ListView, Text, RefreshControl } from 'react-native';
+import { Card } from 'react-native-elements';
 import InfiniteScroll from 'react-native-infinite-scroll';
 import PostService from '../../service/post.service';
 import PostComponent from '../posts/post.component';
+import UserComponent from '../user/user.component';
 
 export default class PostsListComponent extends Component {
 
@@ -75,12 +77,14 @@ export default class PostsListComponent extends Component {
                 horizontal={false}
                 onLoadMoreAsync={this.loadMorePages}
                 distanceFromEnd={10}
+                onChangeVisibleRows={(visible, changed) => false}
                 refreshControl={
                     <RefreshControl
                         refreshing={this.state.refreshing}
                         onRefresh={this.__onRefresh.bind(this)}
-                    />}
-            >
+                    />}>
+
+                <UserComponent />
 
                 <ListView
                     enableEmptySections={true}

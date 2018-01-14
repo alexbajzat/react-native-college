@@ -29,7 +29,8 @@ export default class PostService {
                 author: post.author,
                 added_to_favourite: post.added_to_favourite,
                 description: post.description,
-                image: post.image
+                image: post.image,
+                coordinates: post.coordinates
             })
         })
     }
