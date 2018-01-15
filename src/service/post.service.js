@@ -5,12 +5,11 @@ export default class PostService {
     constructor() {
         this.token = null;
         var instance = this;
-        AsyncStorage.getItem('@NatureEscapeStore')
+        AsyncStorage.getItem('@NatureEscapeStore:token')
             .then((e) => {
                 console.log('from store', e);
                 instance.token = e;
             });
-        console.log('token', this.token);
     }
     fetchPosts(page, pageSize) {
         return fetch(`${API_URL}/posts?_page=${page}&_limit=${pageSize}`, {
@@ -18,7 +17,8 @@ export default class PostService {
             headers: {
                 'Cache-Control': 'no-store',
                 Pragma: 'no-cache',
-                Expires: 0
+                Expires: 0,
+                Authorization: this.token
             }
         });
     }
@@ -30,7 +30,9 @@ export default class PostService {
                 'Cache-Control': 'no-store',
                 'Content-Type': 'application/json',
                 Pragma: 'no-cache',
-                Expires: 0
+                Expires: 0,
+                Authorization: this.token
+                
             },
             body: JSON.stringify({
                 id: post.id,

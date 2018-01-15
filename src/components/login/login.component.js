@@ -34,9 +34,10 @@ export default class LoginComponent extends Component {
             // password: this.state.password
             username: 'mock',
             password: 'mockpass'
-        }).then((response) => {
+        }).then(response => response.json())
+        .then((response) => {
             let succes = false;
-            if (response.status === 200) {
+            if (response.body) {
                 succes = true
             }
             if (this.state.keepLogged) {
